@@ -7,7 +7,10 @@ public partial class MainWindow
 	private global::Gtk.Entry entry1;
 	private global::Gtk.Entry entry2;
 	private global::Gtk.Entry entryResult;
+	private global::Gtk.SpinButton spinbutton1;
 	private global::Gtk.HBox hbox1;
+	private global::Gtk.Button button2;
+	private global::Gtk.Button button1;
 	private global::Gtk.Button buttonSumar;
 	
 	protected virtual void Build ()
@@ -55,9 +58,48 @@ public partial class MainWindow
 		w3.Expand = false;
 		w3.Fill = false;
 		// Container child vbox1.Gtk.Box+BoxChild
+		this.spinbutton1 = new global::Gtk.SpinButton (-1000000, 1000000, 1);
+		this.spinbutton1.CanFocus = true;
+		this.spinbutton1.Name = "spinbutton1";
+		this.spinbutton1.Adjustment.PageIncrement = 10;
+		this.spinbutton1.ClimbRate = 1;
+		this.spinbutton1.Digits = ((uint)(3));
+		this.spinbutton1.Numeric = true;
+		this.vbox1.Add (this.spinbutton1);
+		global::Gtk.Box.BoxChild w4 = ((global::Gtk.Box.BoxChild)(this.vbox1 [this.spinbutton1]));
+		w4.Position = 3;
+		w4.Expand = false;
+		w4.Fill = false;
+		// Container child vbox1.Gtk.Box+BoxChild
 		this.hbox1 = new global::Gtk.HBox ();
 		this.hbox1.Name = "hbox1";
 		this.hbox1.Spacing = 6;
+		// Container child hbox1.Gtk.Box+BoxChild
+		this.button2 = new global::Gtk.Button ();
+		this.button2.CanFocus = true;
+		this.button2.Name = "button2";
+		this.button2.UseUnderline = true;
+		this.button2.FocusOnClick = false;
+		this.button2.Label = global::Mono.Unix.Catalog.GetString ("2");
+		this.hbox1.Add (this.button2);
+		global::Gtk.Box.BoxChild w5 = ((global::Gtk.Box.BoxChild)(this.hbox1 [this.button2]));
+		w5.PackType = ((global::Gtk.PackType)(1));
+		w5.Position = 0;
+		w5.Expand = false;
+		w5.Fill = false;
+		// Container child hbox1.Gtk.Box+BoxChild
+		this.button1 = new global::Gtk.Button ();
+		this.button1.CanFocus = true;
+		this.button1.Name = "button1";
+		this.button1.UseUnderline = true;
+		this.button1.FocusOnClick = false;
+		this.button1.Label = global::Mono.Unix.Catalog.GetString ("1");
+		this.hbox1.Add (this.button1);
+		global::Gtk.Box.BoxChild w6 = ((global::Gtk.Box.BoxChild)(this.hbox1 [this.button1]));
+		w6.PackType = ((global::Gtk.PackType)(1));
+		w6.Position = 1;
+		w6.Expand = false;
+		w6.Fill = false;
 		// Container child hbox1.Gtk.Box+BoxChild
 		this.buttonSumar = new global::Gtk.Button ();
 		this.buttonSumar.CanFocus = true;
@@ -65,16 +107,16 @@ public partial class MainWindow
 		this.buttonSumar.UseUnderline = true;
 		this.buttonSumar.Label = global::Mono.Unix.Catalog.GetString ("+");
 		this.hbox1.Add (this.buttonSumar);
-		global::Gtk.Box.BoxChild w4 = ((global::Gtk.Box.BoxChild)(this.hbox1 [this.buttonSumar]));
-		w4.PackType = ((global::Gtk.PackType)(1));
-		w4.Position = 2;
-		w4.Expand = false;
-		w4.Fill = false;
+		global::Gtk.Box.BoxChild w7 = ((global::Gtk.Box.BoxChild)(this.hbox1 [this.buttonSumar]));
+		w7.PackType = ((global::Gtk.PackType)(1));
+		w7.Position = 2;
+		w7.Expand = false;
+		w7.Fill = false;
 		this.vbox1.Add (this.hbox1);
-		global::Gtk.Box.BoxChild w5 = ((global::Gtk.Box.BoxChild)(this.vbox1 [this.hbox1]));
-		w5.Position = 3;
-		w5.Expand = false;
-		w5.Fill = false;
+		global::Gtk.Box.BoxChild w8 = ((global::Gtk.Box.BoxChild)(this.vbox1 [this.hbox1]));
+		w8.Position = 4;
+		w8.Expand = false;
+		w8.Fill = false;
 		this.Add (this.vbox1);
 		if ((this.Child != null)) {
 			this.Child.ShowAll ();
