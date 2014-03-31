@@ -7,7 +7,7 @@ public partial class MainWindow
 	private global::Gtk.VBox vbox1;
 	private global::Gtk.Toolbar toolbar1;
 	private global::PGtkArray.MyWidget mywidget1;
-	private global::PGtkArray.ArrayButton arrayButton;
+	private global::Serpis.Ed.ArrayButton arrayButton;
 	
 	protected virtual void Build ()
 	{
@@ -44,7 +44,7 @@ public partial class MainWindow
 		w3.Expand = false;
 		w3.Fill = false;
 		// Container child vbox1.Gtk.Box+BoxChild
-		this.arrayButton = new global::PGtkArray.ArrayButton ();
+		this.arrayButton = new global::Serpis.Ed.ArrayButton ();
 		this.arrayButton.Events = ((global::Gdk.EventMask)(256));
 		this.arrayButton.Name = "arrayButton";
 		this.arrayButton.Rows = 9;

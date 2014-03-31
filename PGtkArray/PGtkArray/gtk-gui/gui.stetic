@@ -7,6 +7,7 @@
   <import>
     <widget-library name="glade-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
     <widget-library name="../bin/Debug/PGtkArray.exe" internal="true" />
+    <widget-library name="../../PSerpisEd/bin/Debug/PSerpisEd.dll" />
   </import>
   <widget class="Gtk.Window" id="MainWindow" design-size="400 300">
     <action-group name="Default" />
@@ -44,7 +45,7 @@
           </packing>
         </child>
         <child>
-          <widget class="PGtkArray.ArrayButton" id="arrayButton">
+          <widget class="Serpis.Ed.ArrayButton" id="arrayButton">
             <property name="MemberName" />
             <property name="Events">ButtonPressMask</property>
             <property name="Rows">9</property>
@@ -149,27 +150,6 @@
           </packing>
         </child>
       </widget>
-    </child>
-  </widget>
-  <widget class="Gtk.Bin" id="PGtkArray.ArrayButton" design-size="300 300">
-    <property name="MemberName" />
-    <property name="Visible">False</property>
-    <child>
-      <placeholder />
-    </child>
-  </widget>
-  <widget class="Gtk.Bin" id="PGtkArray.ArrayButton" design-size="300 300">
-    <property name="MemberName" />
-    <property name="Visible">False</property>
-    <child>
-      <placeholder />
-    </child>
-  </widget>
-  <widget class="Gtk.Bin" id="PGtkArray.ArrayButton" design-size="300 300">
-    <property name="MemberName" />
-    <property name="Visible">False</property>
-    <child>
-      <placeholder />
     </child>
   </widget>
 </stetic-interface>
