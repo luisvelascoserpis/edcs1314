@@ -71,8 +71,8 @@
     <Compile Include="AssemblyInfo.cs" />
     <Compile Include="MyWidget.cs" />
     <Compile Include="gtk-gui\PGtkArray.MyWidget.cs" />
-    <Compile Include="ArrayButton.cs" />
     <Compile Include="gtk-gui\PGtkArray.ArrayButton.cs" />
+    <Compile Include="ArrayButton.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

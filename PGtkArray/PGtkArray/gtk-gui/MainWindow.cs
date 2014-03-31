@@ -7,7 +7,7 @@ public partial class MainWindow
 	private global::Gtk.VBox vbox1;
 	private global::Gtk.Toolbar toolbar1;
 	private global::PGtkArray.MyWidget mywidget1;
-	private global::PGtkArray.ArrayButton arraybutton1;
+	private global::PGtkArray.ArrayButton arrayButton;
 	
 	protected virtual void Build ()
 	{
@@ -44,11 +44,13 @@ public partial class MainWindow
 		w3.Expand = false;
 		w3.Fill = false;
 		// Container child vbox1.Gtk.Box+BoxChild
-		this.arraybutton1 = new global::PGtkArray.ArrayButton ();
-		this.arraybutton1.Events = ((global::Gdk.EventMask)(256));
-		this.arraybutton1.Name = "arraybutton1";
-		this.vbox1.Add (this.arraybutton1);
-		global::Gtk.Box.BoxChild w4 = ((global::Gtk.Box.BoxChild)(this.vbox1 [this.arraybutton1]));
+		this.arrayButton = new global::PGtkArray.ArrayButton ();
+		this.arrayButton.Events = ((global::Gdk.EventMask)(256));
+		this.arrayButton.Name = "arrayButton";
+		this.arrayButton.Rows = 9;
+		this.arrayButton.Columns = 10;
+		this.vbox1.Add (this.arrayButton);
+		global::Gtk.Box.BoxChild w4 = ((global::Gtk.Box.BoxChild)(this.vbox1 [this.arrayButton]));
 		w4.Position = 2;
 		this.Add (this.vbox1);
 		if ((this.Child != null)) {
