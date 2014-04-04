@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.0</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{5E3F83C9-9DED-4020-85EF-5C081D9B4400}</ProjectGuid>
+    <ProjectGuid>{B1853907-54BC-4CBC-B4A3-CD3FFB112A61}</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>PSerpisEd</RootNamespace>
     <AssemblyName>PSerpisEd</AssemblyName>

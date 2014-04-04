@@ -57,6 +57,9 @@
       <Package>gtk-sharp-2.0</Package>
     </Reference>
     <Reference Include="Mono.Posix" />
+    <Reference Include="PSerpisEd">
+      <HintPath>..\..\PSerpisEd\PSerpisEd\bin\Debug\PSerpisEd.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="gtk-gui\gui.stetic">
@@ -73,10 +76,4 @@
     <Compile Include="gtk-gui\PGtkArray.MyWidget.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
-  <ItemGroup>
-    <ProjectReference Include="..\PSerpisEd\PSerpisEd.csproj">
-      <Project>{5E3F83C9-9DED-4020-85EF-5C081D9B4400}</Project>
-      <Name>PSerpisEd</Name>
-    </ProjectReference>
-  </ItemGroup>
 </Project>
